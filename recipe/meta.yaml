@@ -1,0 +1,44 @@
+{% set name = "epix-hr-m-320k" %}
+{% set version = "1.0.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pswww.slac.stanford.edu/swdoc/tutorials/{{ name }}-{{ version }}.tar.gz
+  sha256: 974773a4b2edee5740fbb11a21a342cb0c255c4ded7badb73e55b6eef9197773 
+  patches:
+    - setup.patch
+
+build:
+  skip: True  # [win or osx]
+  noarch: python
+  number: 0
+  script:
+    - "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - python
+    - setuptools
+    - pip
+  run:
+    - python
+
+about:
+  home: https://github.com/slaclab/epix-hr-m-320k
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: 'Epix HR M 320k software and firmware'
+  description: |
+    firmware for Epix HR M 320k devices.
+  doc_url: https://github.com/slaclab/epix-hr-m-320k
+  dev_url: https://github.com/slaclab/epix-hr-m-320k
+
+extra:
+  recipe-maintainers:
+    - valmar
+    - chrisvam
+

@@ -21,7 +21,7 @@ new file mode 100644
 index 0000000..639a14a
 --- /dev/null
 +++ b/setup.py
-@@ -0,0 +1,86 @@
+@@ -0,0 +1,85 @@
 +from setuptools import setup
 +
 +# use softlinks to make the various "board-support-package" submodules
@@ -88,11 +88,10 @@ index 0000000..639a14a
 +        'epix_hr_m_320k.l2si_core',
 +        'epix_hr_m_320k.axipcie',
 +        'epix_hr_m_320k.LclsTimingCore',
-+        'epix_hr_m_320k.ePixViewer',
-+        'epix_hr_m_320k.ePixViewer.software',
-+        'epix_hr_m_320k.ePixViewer.software.deviceFiles',
 +        'epix_hr_m_320k.epix_hr_core',
++        'epix_hr_m_320k.epix_hr_leap_common',
 +        'epix_hr_m_320k.pciePgpCard',
++        'epix_hr_m_320k.ePix320kM',
 +    ],
 +    package_dir = {
 +        'epix_hr_m_320k': 'firmware/python',

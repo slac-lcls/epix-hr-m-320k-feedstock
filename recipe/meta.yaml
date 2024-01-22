@@ -1,13 +1,13 @@
 {% set name = "epix-hr-m-320k" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pswww.slac.stanford.edu/swdoc/tutorials/{{ name }}-{{ version }}.tar.gz
-  sha256: 974773a4b2edee5740fbb11a21a342cb0c255c4ded7badb73e55b6eef9197773 
+  url: file:///cds/home/c/cpo/junk/junk/{{ name }}-{{ version }}.tar.gz
+  sha256: ee6c04817cd6827b27ce2834625cc5c63e694dd597d8e248d8972cec1efa320a
   patches:
     - setup.patch
 

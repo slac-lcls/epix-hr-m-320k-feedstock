@@ -96,7 +96,7 @@ index 0000000..639a14a
 +    package_dir = {
 +        'epix_hr_m_320k': 'firmware/python',
 +        'epix_hr_m_320k.surf': 'firmware/submodules/surf/python/surf',
-+        'epix_hr_m_320k.asic_reg_mapping': 'firmware/python/AsicRegMapping/python/asic_reg_mapping',
++        'epix_hr_m_320k.asic_reg_mapping': 'firmware/submodules/AsicRegMapping/python/asic_reg_mapping',
 +        'epix_hr_m_320k.ePixViewer': 'firmware/python/ePixViewer',
 +        'epix_hr_m_320k.l2si_core': 'firmware/submodules/l2si-core/python/l2si_core',
 +        'epix_hr_m_320k.axipcie': 'firmware/submodules/axi-pcie-core/python/axipcie',

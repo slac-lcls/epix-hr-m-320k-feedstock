@@ -1,13 +1,13 @@
 {% set name = "epix-hr-m-320k" %}
-{% set version = "1.0.3" %}
+{% set version = "1.1.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: file:///cds/home/c/cpo/junk/junk/{{ name }}-{{ version }}.tar.gz
-  sha256: ee6c04817cd6827b27ce2834625cc5c63e694dd597d8e248d8972cec1efa320a
+  url: file:///cds/home/c/cpo/git/{{ name }}-{{ version }}.tar.gz
+  sha256: 953537a47e257005b0ea1e9ad580034f7c15e0c89a7a9cba593ff4cc6f4d0437
   patches:
     - setup.patch
 

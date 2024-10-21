@@ -1,20 +1,20 @@
 {% set name = "epix-hr-m-320k" %}
-{% set version = "1.1.5" %}
+{% set version = "1.1.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: file:///cds/home/c/cpo/git/{{ name }}-{{ version }}.tar.gz
-  sha256: 953537a47e257005b0ea1e9ad580034f7c15e0c89a7a9cba593ff4cc6f4d0437
+  url: file:///sdf/group/lcls/ds/ana/sw/source_files/{{ name }}-{{ version }}.tar.gz
+  sha256: eb486ad860a3111d69c6bcd8c3b12e0fe41b9130acdac11df038f5a47ab2afc6
   patches:
     - setup.patch
 
 build:
   skip: True  # [win or osx]
   noarch: python
-  number: 0
+  number: 1
   script:
     - "{{ PYTHON }} -m pip install . -vv"
 

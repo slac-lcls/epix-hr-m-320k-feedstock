@@ -18,7 +18,7 @@ index 7834353..7490339 100644
 -
 diff --git a/setup.py b/setup.py
 new file mode 100644
-index 0000000..586e12e
+index 0000000..1d8e03d
 --- /dev/null
 +++ b/setup.py
 @@ -0,0 +1,86 @@
@@ -90,6 +90,7 @@ index 0000000..586e12e
 +        'epix_hr_m_320k.asic_reg_mapping.SparkPixS',
 +        'epix_hr_m_320k.asic_reg_mapping.Cpix2',
 +        'epix_hr_m_320k.asic_reg_mapping.EpixUhr',
++        'epix_hr_m_320k.asic_reg_mapping.EpixUhr100k',
 +        'epix_hr_m_320k.asic_reg_mapping.SparkPixS_XPC',
 +        'epix_hr_m_320k.l2si_core',
 +        'epix_hr_m_320k.axipcie',
@@ -97,7 +98,6 @@ index 0000000..586e12e
 +    package_dir = {
 +        'epix_hr_m_320k': 'firmware/python',
 +        'epix_hr_m_320k.surf': 'firmware/submodules/surf/python/surf',
-+        'epix_hr_m_320k.ePixViewer': 'firmware/python/ePixViewer',
 +        'epix_hr_m_320k.l2si_core': 'firmware/submodules/l2si-core/python/l2si_core',
 +        'epix_hr_m_320k.LclsTimingCore': 'firmware/submodules/lcls-timing-core/python/LclsTimingCore',
 +        'epix_hr_m_320k.epix_hr_core': 'firmware/submodules/epix-hr-core/python/epix_hr_core',

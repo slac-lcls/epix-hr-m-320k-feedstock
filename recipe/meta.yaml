@@ -1,5 +1,5 @@
 {% set name = "epix-hr-m-320k" %}
-{% set version = "1.1.9" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: file:///sdf/group/lcls/ds/ana/sw/source_files/{{ name }}-{{ version }}.tar.gz
-  sha256: eb486ad860a3111d69c6bcd8c3b12e0fe41b9130acdac11df038f5a47ab2afc6
+  sha256: 861a85b9006ef24e9340d2a39a44b96a44e8ede611da17fa19ff5156c7509a86
   patches:
     - setup.patch
 
